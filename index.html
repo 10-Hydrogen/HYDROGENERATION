@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HYDROGENERATION</title>
+  <style>
+    :root {
+      --bg: #0a0f1d;
+      --card-bg: #131b2e;
+      --accent: #00d2ff;
+      --accent-glow: rgba(0, 210, 255, 0.3);
+      --text: #f0f6fc;
+      --text-muted: #8b949e;
+      --border: #212d45;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: url(background.jpg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 4px;
+      background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-container {
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .image-slot:nth-child(1) {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 768px) {
+      .image-slot:nth-child(1) {
+        grid-column: span 1;
+      }
+    }
+
+    .image-slot {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      height: 320px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .slot-number {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(10, 15, 29, 0.8);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HYDROGENERATION</h1>
+    <p style="color: var(--text-muted);">WHERE DREAMS ARE SHOWN
+  </p>
+  </header>
+
+  <main class="gallery-container">
+
+    <!-- SLOT 1 -->
+    <div class="image-slot">
+      <span class="slot-number"></span>
+      <!-- CHANGE THE LINK BELOW TO YOUR OWN IMAGE -->
+      <img src="Photo1.jpg" alt="AUTHOR" />
+    </div>
+
+    <!-- SLOT 2 -->
+    <div class="image-slot">
+      <span class="slot-number"></span>
+      <!-- CHANGE THE LINK BELOW TO YOUR OWN IMAGE -->
+      <img src="Photo2.png" alt="GRAPHIC DESIGNER" />
+    </div>
+
+    <!-- SLOT 3 -->
+    <div class="image-slot">
+      <span class="slot-number"></span>
+      <!-- CHANGE THE LINK BELOW TO YOUR OWN IMAGE -->
+      <img src="Photo3.jpg" alt="VIDEOGAME DESIGNER" />
+    </div>
+
+    <!-- SLOT 4 -->
+    <div class="image-slot">
+      <span class="slot-number"></span>
+      <!-- CHANGE THE LINK BELOW TO YOUR OWN IMAGE -->
+      <img src="Photo4.jpg" alt="PHOTOGRAPHER" />
+    </div>
+
+    <!-- SLOT 5 -->
+    <div class="image-slot">
+      <span class="slot-number"></span>
+      <!-- CHANGE THE LINK BELOW TO YOUR OWN IMAGE -->
+      <img src="Photo5.jpg" alt="ARCHITECT" />
+    </div>
+
+<footer class="custom-footer">
+  <p>Thank you for visiting HYDROGENERATION.Visit our exhibit for more works.</p>
+</footer>
+  </main>
+
+</body>
+</html>
